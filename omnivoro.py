@@ -1,6 +1,7 @@
 from animales import Animal
-
 class Omnivoro(Animal):
-    def __init__(self,):
-        super().__init__(alimentacion,especie)
-        self.alimentos = ["carne", "aves", "pescado", "huevos", "hierbas", "frutas", "hojas", "vegetales", "raíces", "bulbos"]
+    def __init__(self, nombre, especie):
+        super().__init__(nombre, especie, "Omnívoro")
+
+    def alimentarse(self):
+        print(f"{self.nombre} come tanto carne como vegetales.")
